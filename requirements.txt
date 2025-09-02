@@ -1,0 +1,6 @@
+osmnx==2.0.5
+geopandas
+pandas
+shapely
+networkx
+folium
