@@ -18,11 +18,11 @@ It downloads arterials first, then pulls local streets **only where stops are fa
 **Interactive map preview (screenshot):**
 
 <p align="center">
-  <img src="docs/images/output_1.png" alt="Screenshot 1" width="600"/>
+  <img src="docs/images/output_1.png" alt="Screenshot 1"/>
 </p>
 
 <p align="center">
-  <img src="docs/images/output_2.png" alt="Screenshot 2" width="600"/>
+  <img src="docs/images/output_2.png" alt="Screenshot 2" />
 </p>
 
 
