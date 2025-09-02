@@ -17,8 +17,14 @@ It downloads arterials first, then pulls local streets **only where stops are fa
 ## 📸 Example Output
 **Interactive map preview (screenshot):**
 
-![Transit Network Example](docs/images/output_2.png)
-![Transit Network Example](docs/images/output_2.png)
+<p align="center">
+  <img src="docs/images/output_1.png" alt="Screenshot 1" width="600"/>
+</p>
+
+<p align="center">
+  <img src="docs/images/output_2.png" alt="Screenshot 2" width="600"/>
+</p>
+
 
 
 ---
