@@ -16,23 +16,9 @@ It downloads arterials first, then pulls local streets **only where stops are fa
 ## 📸 Example Output
 **Interactive map preview (screenshot):**
 
-![Transit Network Example](docs/images/output_2.png)
-![Transit Network Example](docs/images/output_2.png)
+[Transit Network Example](docs/images/output_2.png)
+[Transit Network Example](docs/images/output_2.png)
 
-
-## 🗂 Project Structure
-transit-road-network-builder/
-├── data/
-│ └── sample_stops.csv # example input
-├── docs/
-│ └── images/
-│ ├── map_example.png # screenshots you add
-│ └── arterial_vs_local.png # optional
-├── outputs/ # (optional) where you save results
-├── src/
-│ └── build_network.py # main script
-├── requirements.txt
-└── README.md
 
 ---
 
@@ -57,3 +43,4 @@ CSV with these columns:
 
 Stop_ID,Stop_Name,Stop lat,Stop lon
 1,Sample Stop,12.9716,77.5946
+
