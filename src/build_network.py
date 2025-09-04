@@ -94,3 +94,33 @@ for _, row in stops_gdf.iterrows():
 
 m.save("network_with_stops.html")
 print("✅ Map saved as network_with_stops.html")
+
+
+# =========================
+# Step 7.1. Clean stops columns for shapefile export
+# =========================
+stops_clean = stops_gdf.rename(columns={
+    "Stop Name": "stop_name",      # shapefile field names must be <= 10 chars
+    "nearest_node": "near_node",
+    "snap_dist_m": "snap_dist"
+})
+
+# =========================
+# Step 8. Export shapefiles for transport modeling
+# =========================
+import os
+os.makedirs("outputs", exist_ok=True)
+
+# Shapefile exports (creates .shp, .shx, .dbf, .prj, etc.)
+nodes.to_file("outputs/nodes.shp", driver="ESRI Shapefile")
+edges.to_file("outputs/links.shp", driver="ESRI Shapefile")
+stops_clean.to_file("outputs/stops.shp", driver="ESRI Shapefile")
+
+print("✅ Shapefiles exported to /outputs (nodes, links, stops).")
+
+# Extra: GeoPackage export (no truncation, modern format)
+edges.to_file("outputs/network.gpkg", layer="links", driver="GPKG")
+nodes.to_file("outputs/network.gpkg", layer="nodes", driver="GPKG")
+stops_clean.to_file("outputs/network.gpkg", layer="stops", driver="GPKG")
+
+print("✅ GeoPackage exported to /outputs/network.gpkg (links, nodes, stops).")
