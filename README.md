@@ -2,7 +2,7 @@
 # Transit Road Network Builder 🚍
 
 Builds a **road network for transit modelling** (Cube, Visum, AequilibraE, etc.) from **bus stop lat–longs** using OpenStreetMap.  
-It downloads arterials first, then pulls local streets **only where stops are far**, snaps stops to the network, and exports an **interactive Folium map**.
+It downloads arterials first, then pulls local streets **only where stops are far**, snaps stops to the network, and exports an **interactive Folium map**,Shapefile & Geopackage of Roadnetwork.
 
 ---
 
